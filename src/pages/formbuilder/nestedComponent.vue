@@ -4,6 +4,7 @@
     :key="index"
     :is="getComponent(item.component)"
     v-bind="getAllProperties(item)"
+    :data="item"
   >
     <nested-component
       v-if="item.children && item.children.length > 0 && item.children !== null"
